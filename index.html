@@ -1,24 +1,71 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miguis Sandwich Shop</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react": "https://esm.sh/react@^19.1.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migui's Sandwich Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            max-width: 400px;
+            height: auto;
+        }
+
+        .info {
+            margin-top: 40px;
+        }
+
+        .address, .hours {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+            margin: 0 0 15px 0;
+            font-size: 1.3em;
+            font-weight: normal;
+        }
+
+        p {
+            color: #333;
+            margin: 8px 0;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    </style>
 </head>
-  <body class="bg-white">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body>
+    <div class="logo">
+        <img src="miguis.gif" alt="Migui's Sandwich Shop Animation">
+    </div>
+    
+    <div class="info">
+        <div class="address">
+            <h2>📍 Address</h2>
+            <p>Carrer del Comte Borrell, 165, local 2</p>
+            <p>Eixample, 08015 Barcelona</p>
+        </div>
+        
+        <div class="hours">
+            <h2>🕐 Opening Hours</h2>
+            <p>🎉 Opening soon! 🎊✨</p>
+        </div>
+    </div>
+</body>
 </html>
